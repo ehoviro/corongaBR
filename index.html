@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>coronga alert!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no,
+  minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- Loads <model-viewer> for modern browsers: -->
+  <script type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+  </script>
+
+  <!-- Loads <model-viewer> for old browsers like IE11: -->
+  <script nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+  </script>
+
+  <!--  Edge and Firefox < 63 -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+
+</head>
+<body>
+ <model-viewer src="assets/CorongaBR.gltf" 
+                ios-src="assets/CorongaBR.usdz"
+                ar
+                auto-rotate 
+                camera-controls 
+                shadow-intensity="1" 
+                alt="pass the virtual coronga" background-color="#FF0000">                
+  </model-viewer> 
+  <body bgcolor="#FF0000"> 
+</body>
+</html>
